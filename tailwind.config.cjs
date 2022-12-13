@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,svelte,js,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'open-sans': ['Open Sans']
+      }
+    },
   },
   plugins: [],
 }
