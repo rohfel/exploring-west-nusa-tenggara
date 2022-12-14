@@ -17,7 +17,7 @@
     </div>
 
     <div class="flex justify-center items-center flex-1 md:my-0 my-10 relative">
-        <img src="/svg/home/nature.svg" alt="Nature SVG Illustration" class="w-3/4 h-3/4 relative z-[5]">
+        <img src="/illustrations/home/nature.svg" alt="Nature SVG Illustration" class="w-3/4 h-3/4 relative z-[5]">
 
         <div class="absolute z-0 w-[40%] h-[35%] top-0 bg-gradient-to-t from-purple-100 via-purple-200 to-purple-300 blur-[900px]" />
         <div class="absolute z-1 w-[80%] h-[80%] rounded-full bottom-40 bg-white blur-[750px]" />

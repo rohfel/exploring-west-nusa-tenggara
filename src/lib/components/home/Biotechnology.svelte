@@ -1,6 +1,6 @@
 <section id="biotechnology" class="flex md:flex-row flex-col sm:py-16 py-6">
-    <div class="flex flex-col justify-center items-start flex-1 md:mr-10 mr-0 md:mt-0 mt-10 relative">
-        <img src="/illustrations/home/science.svg" alt="Science Illustration" class="w-3/4 h-3/4 object-contain">
+    <div class="flex flex-col justify-center sm:items-start items-center flex-1 md:mr-10 mr-0 md:mt-0 mt-10 relative">
+        <img src="/illustrations/home/science.svg" alt="Science Illustration" class="w-[90%] h-[90%] object-contain">
     </div>
 
     <div class="flex flex-col justify-center items-start flex-1">
