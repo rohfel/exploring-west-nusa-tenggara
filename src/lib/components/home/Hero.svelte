@@ -8,10 +8,12 @@
         </div>
 
         <p class="font-open-sans font-normal text-white text-base leading-[25px] max-w-md mt-5">
-            Discover the enormous amount of unique cultures, foods, and natural potentials in West Nusa Tenggara
+            Discover the enormous amount of unique cultures, foods, and natural resources in West Nusa Tenggara
         </p>
 
-        <button class="mt-5 p-3 rounded-md text-black font-semibold bg-purple-500">Let's Explore!</button>
+        <button type="button" class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-tr from-purple-500 via-purple-600 to-purple-700 font-open-sans font-medium text-lg text-black outline-none`}>
+            Let's Explore!
+        </button>
     </div>
 
     <div class="flex justify-center items-center flex-1 md:my-0 my-10 relative">
