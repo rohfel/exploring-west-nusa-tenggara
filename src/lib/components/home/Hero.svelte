@@ -11,7 +11,7 @@
             Discover the enormous amount of unique cultures, foods, and natural resources in West Nusa Tenggara
         </p>
 
-        <button type="button" class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-tr from-purple-500 via-purple-600 to-purple-700 font-open-sans font-medium text-lg text-black outline-none`}>
+        <button type="button" class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-tr from-purple-400 via-purple-500 to-purple-600 font-open-sans font-medium text-lg text-black outline-none`}>
             Let's Explore!
         </button>
     </div>

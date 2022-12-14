@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Navbar, Hero, Features } from '$lib/components'
+    import { Navbar, Hero, Features, Cultures, Geography, Biotechnology } from '$lib/components'
 </script>
 
 <div class="bg-[#121212] w-full overflow-hidden">
@@ -18,6 +18,9 @@
     <div class="bg-[#121212] flex justify-center items-center sm:px-16 px-6">
         <div class="xl:max-w-7xl w-full">
             <Features />
+            <Cultures />
+            <Geography />
+            <Biotechnology />
         </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     interface Feature {
         icon: string
+        iconAlt: string
         title: string
         content: string
     }
@@ -11,7 +12,7 @@
 
 <div class={`flex flex-row p-6 rounded-md ${index !== feature.length - 1 ? 'mb-6' : 'mb-0'}`}>
     <div class="w-1/2 flex justify-center items-center">
-        <img src={feature.icon} alt="Icon" class="w-1/2 h-1/2 object-contain">
+        <img src={feature.icon} alt={feature.iconAlt} class="w-3/5 h-5/6 object-contain">
     </div>
     <div class="flex flex-col flex-1 ml-3">
         <h4 class="font-open-sans font-semibold text-white text-lg leading-[20px] mb-1">

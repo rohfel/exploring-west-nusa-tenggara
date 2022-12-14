@@ -3,23 +3,27 @@
 
     interface Features {
         icon: string
+        iconAlt: string
         title: string
         content: string
     }
 
     const features: Features[] = [
         {
-            icon: '/svg/home/informative.svg',
+            icon: '/illustrations/home/informative.svg',
+            iconAlt: 'Informative Illustration',
             title: 'Simple and Informative',
             content: 'A simple and informative website to discover the enormous unique cultures in West Nusa Tenggara.'
         },
         {
-            icon: '/svg/home/education.svg',
+            icon: '/illustrations/home/education.svg',
+            iconAlt: 'Education Illustration',
             title: 'Educational',
             content: 'Our mission is to educate people about West Nusa Tenggara'
         },
         {
-            icon: '/svg/home/checklist.svg',
+            icon: '/illustrations/home/checklist.svg',
+            iconAlt: 'Checklist Illustration',
             title: 'Easy to Grasp',
             content: 'Learning something new doesn\'t have to be difficult. With our easy to grasp contents, you will be able to learn new things about West Nusa Tenggara easily.'
         }
@@ -31,7 +35,7 @@
         <h2 class="font-open-sans font-semibold sm:text-5xl text-4xl text-white leading-[50px] w-full">Discover the enormous diversity <br class="sm:block hidden" /> in West Nusa Tenggara</h2>
         <p class="font-open-sans font-normal text-white text-base leading-[25px] max-w-lg mt-5">This website will provide you a bunch of informative contents that will help you to explore deeper into West Nusa Tenggara</p>
 
-        <button type="button" class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-tr from-purple-500 via-purple-600 to-purple-700 font-open-sans font-medium text-lg text-black outline-none`}>
+        <button type="button" class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-tr from-purple-400 via-purple-500 to-purple-600 font-open-sans font-medium text-lg text-black outline-none`}>
             Let's Explore!
         </button>
     </div>
