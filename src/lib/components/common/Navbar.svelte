@@ -7,10 +7,6 @@
     {
       title: 'Explore',
       href: '/explore'
-    },
-    {
-      title: 'About',
-      href: '/about'
     }
   ];
 
