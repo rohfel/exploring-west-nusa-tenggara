@@ -2,6 +2,10 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>Explore</title>
+</svelte:head>
+
 <section id="articles" class="bg-[#121212] sm:py-16 py-6">
   <h1
     class="font-open-sans font-bold text-7xl text-white text-center leading-[75px]"

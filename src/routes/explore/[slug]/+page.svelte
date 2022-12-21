@@ -2,6 +2,10 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>{data.title}</title>
+</svelte:head>
+
 <article
   class="bg-[#121212] flex flex-col justify-center items-center sm:py-16 py-6 sm:px-16 px-6"
 >

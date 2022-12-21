@@ -23,11 +23,11 @@
     />
   </div>
   <div class="flex flex-col flex-1 ml-3">
-    <h4
+    <h3
       class="font-open-sans font-semibold text-white text-lg leading-[20px] mb-1"
     >
       {feature.title}
-    </h4>
+    </h3>
     <p class="font-open-sans font-normal text-white text-base leading-[24px]">
       {feature.content}
     </p>

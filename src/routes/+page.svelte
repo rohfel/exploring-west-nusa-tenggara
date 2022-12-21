@@ -10,6 +10,11 @@
 </script>
 
 <svelte:head>
+  <meta
+    name="description"
+    content="Simple, informative, educational, easy to grasp contents about West Nusa Tenggara."
+  />
+
   <title>Exploring West Nusa Tenggara</title>
 </svelte:head>
 
