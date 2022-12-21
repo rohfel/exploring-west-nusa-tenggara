@@ -33,6 +33,32 @@
       > cultures, foods, and natural resources in West Nusa Tenggara
     </p>
 
+    <div class="mt-5 flex items-end">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+        />
+      </svg>
+      <p
+        class="ml-2 font-open-sans font-normal text-white text-base leading-[25px] max-w-md mt-2"
+      >
+        This website is open source! Check out the <a
+          href="https://github.com/rohfel/exploring-west-nusa-tenggara"
+          class="font-semibold transition ease-in-out delay-100 duration-300 hover:font-bold hover:scale-100"
+          >source code</a
+        >!
+      </p>
+    </div>
+
     <a href="/explore">
       <button
         type="button"
