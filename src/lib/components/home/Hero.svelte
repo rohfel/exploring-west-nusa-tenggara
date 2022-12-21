@@ -1,10 +1,20 @@
+<script lang="ts">
+  import { theme } from '$lib/utils';
+
+  let currentTheme;
+
+  theme.subscribe((theme) => {
+    currentTheme = theme;
+  });
+</script>
+
 <section id="home" class="flex md:flex-row flex-col sm:py-16 py-6">
   <div
     class="flex justify-center items-start flex-1 flex-col xl:px-0 sm:px-16 px-6"
   >
     <div class="flex flex-row justify-between items-center w-full">
       <h1
-        class="flex-1 font-open-sans font-bold text-7xl text-white leading-[75px]"
+        class="flex-1 font-open-sans font-bold text-7xl text-black dark:text-white leading-[75px]"
       >
         Let's Explore <br class="sm:block hidden" />
         <span
@@ -15,7 +25,7 @@
     </div>
 
     <p
-      class="font-open-sans font-medium text-white text-lg leading-[25px] max-w-md mt-5"
+      class="font-open-sans font-medium text-black dark:text-white text-lg leading-[25px] max-w-md mt-5"
     >
       Discover the <span
         class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500"
@@ -39,7 +49,7 @@
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
-        stroke="white"
+        stroke={`${currentTheme === 'light' ? 'black' : 'white'}`}
         class="w-6 h-6"
       >
         <path
@@ -49,7 +59,7 @@
         />
       </svg>
       <p
-        class="ml-2 font-open-sans font-normal text-white text-base leading-[25px] max-w-md mt-2"
+        class="ml-2 font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-md mt-2"
       >
         This website is open source! Check out the <a
           href="https://github.com/rohfel/exploring-west-nusa-tenggara"

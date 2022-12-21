@@ -1,4 +1,18 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
+  import { theme } from '$lib/utils';
+
+  onMount(() => {
+    const existingTheme = localStorage.getItem('theme');
+
+    if (!existingTheme) {
+      theme.set('light');
+    } else {
+      theme.set(existingTheme);
+    }
+  });
+
   const navLinks: { title: string; href: string }[] = [
     {
       title: 'Home',
@@ -10,6 +24,18 @@
     }
   ];
 
+  const changeTheme = () => {
+    if ($theme === 'light') {
+      theme.set('dark');
+      document.documentElement.classList.add('dark');
+    } else if ($theme === 'dark') {
+      theme.set('light');
+      document.documentElement.classList.remove('dark');
+    }
+
+    localStorage.setItem('theme', $theme);
+  };
+
   let menuToggle = false;
 </script>
 
@@ -17,16 +43,54 @@
   <ul class="list-none sm:flex hidden justify-end items-center flex-1">
     {#each navLinks as navLink, i}
       <li
-        class={`font-open-sans font-bold text-md cursor-pointer text-white transition ease-in-out delay-100 duration-300 hover:-translate-y-1 hover:scale-100 ${
+        class={`font-open-sans font-bold text-md cursor-pointer text-black dark:text-white transition ease-in-out delay-100 duration-300 hover:-translate-y-1 hover:scale-100 ${
           i == navLinks.length - 1 ? 'mr-0' : 'mr-10'
         }`}
       >
         <a href={`${navLink.href}`}>{navLink.title}</a>
       </li>
     {/each}
+
+    {#if $theme === 'light'}
+      <button class="ml-10" on:click={changeTheme}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+      </button>
+    {:else}
+      <button class="ml-10" on:click={changeTheme}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+          />
+        </svg>
+      </button>
+    {/if}
   </ul>
 
-  <div class={`sm:hidden flex flex-1 bg-[#121212] justify-end items-center`}>
+  <div
+    class={`sm:hidden flex flex-1 bg-[#EDEDED] dark:bg-[#121212] justify-end items-center`}
+  >
     {#if menuToggle}
       <button class="w-6 h-6 z-20" on:click={(e) => (menuToggle = !menuToggle)}>
         <svg
@@ -67,12 +131,12 @@
   <div
     class={`${
       menuToggle ? 'fixed top-0 left-0 z-10 flex w-screen h-screen' : 'hidden'
-    } bg-[#121212]`}
+    } bg-[#EDEDED] dark:bg-[#121212]`}
   >
     <ul class="list-none flex flex-col justify-center items-center flex-1">
       {#each navLinks as navLink, i}
         <li
-          class={`font-open-sans font-bold cursor-pointer text-md text-white ${
+          class={`font-open-sans font-bold cursor-pointer text-md text-black dark:text-white ${
             i == navLinks.length - 1 ? 'mb-0' : 'mb-4'
           }`}
         >

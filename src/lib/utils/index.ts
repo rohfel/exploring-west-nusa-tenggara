@@ -1,3 +1,5 @@
+import { writable } from 'svelte/store';
+
 export const fetchMarkdownPosts = async () => {
   const postFiles = import.meta.glob('/src/routes/explore/*.md');
   const iterablePostFiles = Object.entries(postFiles);
@@ -16,3 +18,5 @@ export const fetchMarkdownPosts = async () => {
 
   return posts;
 };
+
+export const theme = writable('light');

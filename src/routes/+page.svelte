@@ -18,13 +18,15 @@
   <title>Exploring West Nusa Tenggara</title>
 </svelte:head>
 
-<div class="bg-[#121212] flex justify-center items-start">
+<div class="bg-[#EDEDED] dark:bg-[#121212] flex justify-center items-start">
   <div class="xl:max-w-7xl w-full">
     <Hero />
   </div>
 </div>
 
-<div class="bg-[#121212] flex justify-center items-center sm:px-16 px-6">
+<div
+  class="bg-[#EDEDED] dark:bg-[#121212] flex justify-center items-center sm:px-16 px-6"
+>
   <div class="xl:max-w-7xl w-full">
     <Features />
     <Cultures />
