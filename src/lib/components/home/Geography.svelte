@@ -1,7 +1,7 @@
 <section id="geography" class="flex md:flex-row flex-col-reverse sm:py-16 py-6">
   <div class="flex flex-col justify-center items-start flex-1">
     <h2
-      class="font-open-sans font-semibold sm:text-5xl text-4xl text-white leading-[50px] w-full"
+      class="font-open-sans font-semibold sm:text-5xl text-4xl text-black dark:text-white leading-[50px] w-full"
     >
       Explore the <span
         class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-600"
@@ -9,7 +9,7 @@
       >
     </h2>
     <p
-      class="font-open-sans font-normal text-white text-base leading-[25px] max-w-lg mt-5"
+      class="font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-lg mt-5"
     >
       With the total area of 20.153 km<sup>2</sup>, you can find a lot of
       astonishing places and also rich natural resources.

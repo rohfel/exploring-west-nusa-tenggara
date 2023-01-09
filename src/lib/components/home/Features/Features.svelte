@@ -35,7 +35,7 @@
 <section id="features" class="flex md:flex-row flex-col sm:py-16 py-6">
   <div class="flex flex-col justify-center items-start flex-1">
     <h2
-      class="font-open-sans font-semibold sm:text-5xl text-4xl text-white leading-[50px] w-full"
+      class="font-open-sans font-semibold sm:text-5xl text-4xl text-black dark:text-white leading-[50px] w-full"
     >
       Discover <br class="sm:block hidden" />
       <span
@@ -45,7 +45,7 @@
       Diversity <br class="sm:block hidden" /> in West Nusa Tenggara
     </h2>
     <p
-      class="font-open-sans font-normal text-white text-base leading-[25px] max-w-lg mt-5"
+      class="font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-lg mt-5"
     >
       This website will provide you a bunch of informative contents that will
       help you to explore deeper into West Nusa Tenggara

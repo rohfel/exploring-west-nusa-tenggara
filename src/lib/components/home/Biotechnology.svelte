@@ -12,7 +12,7 @@
   <div class="flex flex-col justify-center items-start flex-1">
     <div>
       <h2
-        class="font-open-sans font-semibold sm:text-5xl text-4xl text-white leading-[50px] w-full"
+        class="font-open-sans font-semibold sm:text-5xl text-4xl text-black dark:text-white leading-[50px] w-full"
       >
         <span
           class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-500"
@@ -20,7 +20,7 @@
         > Development
       </h2>
       <p
-        class="font-open-sans font-normal text-white text-base leading-[25px] max-w-lg mt-5"
+        class="font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-lg mt-5"
       >
         Learn about the biotechnology products in West Nusa Tenggara and how
         they make and improve it.

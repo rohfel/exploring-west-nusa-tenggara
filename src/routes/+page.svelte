@@ -18,7 +18,9 @@
   <title>Exploring West Nusa Tenggara</title>
 </svelte:head>
 
-<div class="bg-[#EDEDED] dark:bg-[#121212] flex justify-center items-start">
+<div
+  class="bg-[#EDEDED] dark:bg-[#121212] flex justify-center items-start sm:px-16 px-6"
+>
   <div class="xl:max-w-7xl w-full">
     <Hero />
   </div>

@@ -1,7 +1,13 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import { theme } from '$lib/utils';
 
   let currentTheme;
+
+  onMount(() => {
+    currentTheme = $theme;
+  });
 
   theme.subscribe((theme) => {
     currentTheme = theme;
@@ -9,9 +15,7 @@
 </script>
 
 <section id="home" class="flex md:flex-row flex-col sm:py-16 py-6">
-  <div
-    class="flex justify-center items-start flex-1 flex-col xl:px-0 sm:px-16 px-6"
-  >
+  <div class="flex justify-center items-start flex-1 flex-col">
     <div class="flex flex-row justify-between items-center w-full">
       <h1
         class="flex-1 font-open-sans font-bold text-7xl text-black dark:text-white leading-[75px]"
@@ -79,7 +83,7 @@
     </a>
   </div>
 
-  <div class="flex justify-center items-center flex-1 md:my-0 my-10 relative">
+  <div class="flex justify-end items-center flex-1 md:my-0 my-10 relative">
     <img
       src="/illustrations/home/nature.svg"
       alt="Nature SVG Illustration"

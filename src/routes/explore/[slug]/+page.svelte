@@ -7,20 +7,20 @@
 </svelte:head>
 
 <article
-  class="bg-[#121212] flex flex-col justify-center items-center sm:py-16 py-6 sm:px-16 px-6"
+  class="bg-[#EDEDED] dark:bg-[#121212] flex flex-col justify-center items-center sm:py-16 py-6 sm:px-16 px-6"
 >
   <h1
-    class="font-open-sans font-bold text-7xl text-white leading-[75px] text-center"
+    class="font-open-sans font-bold text-7xl text-black dark:text-white leading-[75px] text-center"
   >
     {data.title}
   </h1>
   <h4
-    class="font-open-sans font-medium text-white text-2xl leading-[20px] mt-5"
+    class="font-open-sans font-medium text-black dark:text-white text-2xl leading-[20px] mt-5"
   >
     {data.desc}
   </h4>
   <p
-    class="font-open-sans font-medium text-lg text-white text-left leading-[25px] mt-5"
+    class="font-open-sans font-medium text-lg text-black dark:text-white text-left leading-[25px] mt-5"
   >
     Published: {data.date}
   </p>
