@@ -27,7 +27,7 @@ This website is built using:
 
 ## License
 
-This website is licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
+This website is licensed under the [GNU Affero General Public License version 3](https://opensource.org/licenses/AGPL-3.0).
 
 ## Credit
 
