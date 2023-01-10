@@ -9,10 +9,10 @@
     />
   </div>
 
-  <div class="flex flex-col justify-center items-start flex-1">
+  <div class="flex flex-col flex-1">
     <div>
       <h2
-        class="font-open-sans font-semibold sm:text-5xl text-4xl text-black dark:text-white leading-[50px] w-full"
+        class="font-open-sans font-semibold text-center sm:text-left sm:text-5xl text-4xl text-black dark:text-white leading-[50px] w-full"
       >
         Learn About the <span
           class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600"
@@ -20,17 +20,19 @@
         >
       </h2>
       <p
-        class="font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-lg mt-5"
+        class="font-open-sans font-normal text-center sm:text-left text-black dark:text-white text-base leading-[25px] max-w-lg mt-5"
       >
         See all kinds of unique and amazing cultures here in West Nusa Tenggara
       </p>
     </div>
 
-    <button
-      type="button"
-      class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-t from-green-400 to-green-500 font-open-sans font-semibold text-lg text-black outline-none`}
-    >
-      See the Cultures
-    </button>
+    <div class="flex justify-center sm:justify-start">
+      <button
+        type="button"
+        class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-t from-green-400 to-green-500 font-open-sans font-semibold text-lg text-black outline-none`}
+      >
+        See the Cultures
+      </button>
+    </div>
   </div>
 </section>

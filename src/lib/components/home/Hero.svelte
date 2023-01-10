@@ -47,7 +47,7 @@
       > cultures, foods, and natural resources in West Nusa Tenggara
     </p>
 
-    <div class="mt-5 flex items-end">
+    <div class="mt-5 flex items-center sm:items-end">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -67,7 +67,7 @@
       >
         This website is open source! Check out the <a
           href="https://github.com/rohfel/exploring-west-nusa-tenggara"
-          class="font-semibold transition ease-in-out delay-100 duration-300 hover:font-bold hover:scale-100"
+          class="font-semibold hover:font-bold hover:text-red-500 hover:dark:text-red-500"
           >source code</a
         >!
       </p>
@@ -83,7 +83,9 @@
     </a>
   </div>
 
-  <div class="flex justify-end items-center flex-1 md:my-0 my-10 relative">
+  <div
+    class="hidden sm:flex justify-end items-center flex-1 md:my-0 my-10 relative"
+  >
     <img
       src="/illustrations/home/nature.svg"
       alt="Nature SVG Illustration"
