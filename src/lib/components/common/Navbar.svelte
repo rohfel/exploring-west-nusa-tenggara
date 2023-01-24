@@ -1,15 +1,21 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  import { theme } from '$lib/utils';
+  import { theme, isDarkTheme } from '$lib/utils';
 
   onMount(() => {
     const existingTheme = localStorage.getItem('theme');
 
-    if (!existingTheme && window.watchMedia('(prefers-color-scheme: dark)')) {
-      theme.set('dark');
-    } else {
+    if (existingTheme) {
       theme.set(existingTheme);
+    } else {
+      theme.set('system');
+
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        isDarkTheme.set(true);
+      } else {
+        isDarkTheme.set(false);
+      }
     }
   });
 
@@ -25,12 +31,24 @@
   ];
 
   const changeTheme = () => {
-    if ($theme === 'light') {
-      theme.set('dark');
-      document.documentElement.classList.add('dark');
-    } else if ($theme === 'dark') {
-      theme.set('light');
+    if ($theme === 'system') {
       document.documentElement.classList.remove('dark');
+      theme.set('light');
+      isDarkTheme.set(false);
+    } else if ($theme === 'light') {
+      document.documentElement.classList.add('dark');
+      theme.set('dark');
+      isDarkTheme.set(true);
+    } else if ($theme === 'dark') {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        isDarkTheme.set(true);
+      } else {
+        document.documentElement.classList.remove('dark');
+        isDarkTheme.set(false);
+      }
+
+      theme.set('system');
     }
 
     localStorage.setItem('theme', $theme);
@@ -41,14 +59,20 @@
 
 <svelte:head>
   <script lang="ts">
-    if (
-      localStorage.getItem('theme') === 'dark' ||
-      (!localStorage.contains('theme') &&
-        window.watchMedia('(prefers-color-scheme: dark)'))
-    ) {
-      document.documentElement.classList.add('dark');
+    const existingThemeInit = localStorage.getItem('theme');
+
+    if (!existingThemeInit) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     } else {
-      document.documentElement.classList.remove('dark');
+      if (existingThemeInit === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
     }
   </script>
 </svelte:head>
@@ -64,6 +88,26 @@
         <a href={`${navLink.href}`}>{navLink.title}</a>
       </li>
     {/each}
+
+    <button
+      class={`${$theme === 'system' ? 'inline-block' : 'hidden'} ml-10`}
+      on:click={changeTheme}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke={`${$isDarkTheme ? 'white' : 'black'}`}
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+        />
+      </svg>
+    </button>
 
     <button
       class={`${$theme === 'light' ? 'inline-block' : 'hidden'} ml-10`}
@@ -109,6 +153,26 @@
   <div
     class={`sm:hidden flex flex-1 bg-[#EDEDED] dark:bg-[#121212] justify-end items-center`}
   >
+    <button
+      class={`${$theme === 'system' ? 'inline-block' : 'hidden'} mr-5`}
+      on:click={changeTheme}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke={`${$isDarkTheme ? 'white' : 'black'}`}
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+        />
+      </svg>
+    </button>
+
     <button
       class={`${$theme === 'light' ? 'inline-block' : 'hidden'} mr-5`}
       on:click={changeTheme}
