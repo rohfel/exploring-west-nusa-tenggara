@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 import { mdsvex } from 'mdsvex';
@@ -13,12 +13,7 @@ const config = {
   ],
   extensions: ['.svelte', '.md'],
   kit: {
-    adapter: adapter({
-      pages: 'public',
-      assets: 'public',
-      fallback: null,
-      precompress: false
-    })
+    adapter: adapter()
   }
 };
 
