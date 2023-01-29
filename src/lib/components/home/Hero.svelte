@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { locale } from '$lib/i18n';
 
+  import { t } from '$lib/i18n';
   import { theme } from '$lib/utils';
 
   let currentTheme;
@@ -21,10 +22,10 @@
       <h1
         class="flex-1 font-open-sans font-bold text-7xl text-black dark:text-white leading-[75px]"
       >
-        Let's Explore <br class="sm:block hidden" />
+        {$t('home.hero.title.0')} <br class="sm:block hidden" />
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500"
-          >West Nusa Tenggara</span
+          >{$t('home.hero.title.1')}</span
         >
       </h1>
     </div>
@@ -32,20 +33,22 @@
     <p
       class="font-open-sans font-medium text-black dark:text-white text-lg leading-[25px] max-w-md mt-5"
     >
-      Discover the <span
+      {$t('home.hero.description.0')}
+      <span
         class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-500"
-        >enormous</span
+        >{$t('home.hero.description.1')}</span
       >
-      amount of
+      {$t('home.hero.description.2')}
       <span
         class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500"
-        >unique</span
+        >{$t('home.hero.description.3')}</span
       >
-      and
+      {$t('home.hero.description.4')}
       <span
         class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-500"
-        >amazing</span
-      > cultures, foods, and natural resources in West Nusa Tenggara
+        >{$t('home.hero.description.5')}</span
+      >
+      {$t('home.hero.description.6')}
     </p>
 
     <div class="mt-5 flex items-center sm:items-end">
@@ -64,12 +67,13 @@
         />
       </svg>
       <p
-        class="ml-2 font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-md mt-2"
+        class="ml-2 font-open-sans font-normal text-black dark:text-white text-base leading-[25px] max-w-xl mt-2"
       >
-        This website is open source! Check out the <a
+        {$t('home.hero.foss.0')}
+        <a
           href="https://github.com/rohfel/exploring-west-nusa-tenggara"
           class="font-semibold hover:font-bold hover:text-red-500 hover:dark:text-red-500"
-          >source code</a
+          >{$t('home.hero.foss.1')}</a
         >!
       </p>
     </div>
@@ -79,7 +83,7 @@
         type="button"
         class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-t from-yellow-400 to-yellow-500 font-open-sans font-semibold text-lg text-black outline-none`}
       >
-        Let's Explore!
+        {$t('home.common.cta')}
       </button>
     </a>
   </div>

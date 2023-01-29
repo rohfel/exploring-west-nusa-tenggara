@@ -3,7 +3,7 @@
     icon: string;
     iconAlt: string;
     title: string;
-    content: string;
+    description: string;
   }
 
   export let feature = Feature;
@@ -31,7 +31,7 @@
     <p
       class="font-open-sans font-normal text-black dark:text-white text-base leading-[24px]"
     >
-      {feature.content}
+      {feature.description}
     </p>
   </div>
 </div>
