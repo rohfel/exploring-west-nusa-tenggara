@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { t, locale } from '$lib/i18n';
 
   import { theme, isDarkTheme } from '$lib/utils';
 
@@ -21,12 +22,12 @@
 
   const navLinks: { title: string; href: string }[] = [
     {
-      title: 'Home',
-      href: '/'
+      title: $t('nav.home'),
+      href: `/${$locale}`
     },
     {
-      title: 'Explore',
-      href: '/explore'
+      title: $t('nav.explore'),
+      href: `/${$locale}/explore`
     }
   ];
 

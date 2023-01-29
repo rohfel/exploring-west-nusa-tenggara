@@ -8,7 +8,6 @@ This website is built using:
 
 - [SvelteKit](https://kit.svelte.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Firebase](https://firebase.google.com/)
 
 ## Building
 

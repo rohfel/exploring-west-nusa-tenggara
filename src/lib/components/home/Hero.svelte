@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import { locale } from '$lib/i18n';
 
   import { theme } from '$lib/utils';
 
@@ -73,7 +74,7 @@
       </p>
     </div>
 
-    <a href="/explore">
+    <a href={`/${locale}/explore`}>
       <button
         type="button"
         class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-t from-yellow-400 to-yellow-500 font-open-sans font-semibold text-lg text-black outline-none`}
