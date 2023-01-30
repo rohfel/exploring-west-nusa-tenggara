@@ -1,8 +1,11 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { t, locale } from '$lib/i18n';
+  import { goto } from '$app/navigation';
 
-  import { theme, isDarkTheme } from '$lib/utils';
+  import { t, locale } from '$lib/i18n';
+  import { theme, isDarkTheme, language } from '$lib/utils';
+
+  import 'flag-icons/css/flag-icons.min.css';
 
   onMount(() => {
     const existingTheme = localStorage.getItem('theme');
@@ -18,6 +21,18 @@
         isDarkTheme.set(false);
       }
     }
+
+    const existingLanguage = localStorage.getItem('language');
+
+    if (existingLanguage) {
+      language.set(existingLanguage);
+    } else {
+      language.set($locale);
+    }
+
+    goto(`/${$language}`, {
+      replaceState: true
+    });
   });
 
   const navLinks: { title: string; href: string }[] = [
@@ -53,6 +68,16 @@
     }
 
     localStorage.setItem('theme', $theme);
+  };
+
+  const changeLanguage = () => {
+    if ($language === 'en') {
+      language.set('id');
+    } else if ($language === 'id') {
+      language.set('en');
+    }
+
+    localStorage.setItem('language', $language);
   };
 
   let menuToggle = false;
@@ -149,6 +174,24 @@
         />
       </svg>
     </button>
+
+    <button
+      class={`${$language === 'en' ? 'inline-block' : 'hidden'} ml-10`}
+      on:click={changeLanguage}
+    >
+      <a href={`/${$language}`}>
+        <span class="text-white fi fi-id" />
+      </a>
+    </button>
+
+    <button
+      class={`${$language === 'id' ? 'inline-block' : 'hidden'} ml-10`}
+      on:click={changeLanguage}
+    >
+      <a href={`/${$language}`}>
+        <span class="text-white fi fi-us" />
+      </a>
+    </button>
   </ul>
 
   <div
@@ -212,6 +255,24 @@
           d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
         />
       </svg>
+    </button>
+
+    <button
+      class={`${$language === 'en' ? 'inline-block' : 'hidden'} mr-5`}
+      on:click={changeLanguage}
+    >
+      <a href={`/${$language}`}>
+        <span class="text-white fi fi-id" />
+      </a>
+    </button>
+
+    <button
+      class={`${$language === 'id' ? 'inline-block' : 'hidden'} mr-5`}
+      on:click={changeLanguage}
+    >
+      <a href={`/${$language}`}>
+        <span class="text-white fi fi-us" />
+      </a>
     </button>
 
     {#if menuToggle}

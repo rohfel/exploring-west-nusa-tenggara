@@ -78,7 +78,7 @@
       </p>
     </div>
 
-    <a href={`/${locale}/explore`}>
+    <a href={`/${locale.get()}/explore`}>
       <button
         type="button"
         class={`mt-10 py-4 px-6 rounded-md bg-gradient-to-t from-yellow-400 to-yellow-500 font-open-sans font-semibold text-lg text-black outline-none`}

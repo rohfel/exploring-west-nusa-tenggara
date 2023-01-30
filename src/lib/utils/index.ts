@@ -22,3 +22,4 @@ export const fetchMarkdownPosts = async () => {
 
 export const theme = writable('light');
 export const isDarkTheme = writable(false);
+export const language = writable('en');
