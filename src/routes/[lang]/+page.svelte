@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { t } from '$lib/i18n';
   import {
     Navbar,
     Hero,
@@ -15,7 +16,7 @@
     content="Simple, informative, educational, easy to grasp contents about West Nusa Tenggara."
   />
 
-  <title>Exploring West Nusa Tenggara</title>
+  <title>{$t('home.common.title')}</title>
 </svelte:head>
 
 <div
