@@ -1,61 +1,9 @@
 {
   "common": {
-    "title": "Exploring West Nusa Tenggara",
-    "cta": "Let's Explore"
+    "title": "Exploring West Nusa Tenggara"
   },
   "hero": {
-    "title": ["Let's Explore", "West Nusa Tenggara"],
-    "description": [
-      "Discover the",
-      "enormous",
-      "amount of",
-      "unique",
-      "and",
-      "amazing",
-      "cultures, foods, and natural resources in West Nusa Tenggara"
-    ],
-    "foss": ["This website is open source! Check out the", "source code"]
-  },
-  "features": {
-    "title": ["Discover", "Enormous", "Diversity", "in West Nusa Tenggara"],
-    "description": "This website will provide you a bunch of informative contents that will help you to explore deeper into West Nusa Tenggara",
-    "featuresList": [
-      {
-        "iconAlt": "Informative Illustration",
-        "title": "Simple and Informative",
-        "description": "A simple and informative website to discover the enormous unique cultures in West Nusa Tenggara."
-      },
-      {
-        "iconAlt": "Education Illustration",
-        "title": "Educational",
-        "description": "Our mission is to introduce people about West Nusa Tenggara"
-      },
-      {
-        "iconAlt": "Checklist Illustration",
-        "title": "Easy to Grasp",
-        "description": "Learning something new doesn't have to be difficult. With our easy to grasp contents, you will be able to learn new things about West Nusa Tenggara easily."
-      }
-    ]
-  },
-  "cultures": {
-    "title": ["Learn About the", "Cultures"],
-    "description": "See all kinds of unique and amazing cultures here in West Nusa Tenggara",
-    "cta": "See the Cultures",
-    "illustrationAlt": "Cultures Illustration"
-  },
-  "geography": {
-    "title": ["Explore the", "Geography"],
-    "description": [
-      "With the total area of 20.153 km",
-      ", you can find a lot of astonishing places and also rich natural resources"
-    ],
-    "cta": "Take a Deep Dive",
-    "illustrationAlt": "Mountain Illustration"
-  },
-  "biotechnology": {
-    "title": ["Biotechnology", "Development"],
-    "description": "Learn about the biotechnology products in West Nusa Tenggara",
-    "cta": "Learn More",
-    "illustrationAlt": "Science Illustration"
+    "title": "Let's Exploring West Nusa Tenggara",
+    "cta": "Let's Start!"
   }
 }

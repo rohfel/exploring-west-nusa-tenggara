@@ -1,64 +1,9 @@
 {
   "common": {
-    "title": "Jelajahi Nusa Tenggara Barat",
-    "cta": "Ayo Jelajahi!"
+    "title": "Menjelajahi Nusa Tenggara Barat"
   },
   "hero": {
-    "title": ["Ayo Jelajahi", "Nusa Tenggara Barat"],
-    "description": [
-      "Temukan",
-      "banyaknya",
-      "kelimpahan budaya, makanan tradisional, dan kekayaan alam yang",
-      "unik",
-      "dan",
-      "menakjubkan",
-      "di Nusa Tenggara Barat"
-    ],
-    "foss": [
-      "Website ini kode sumbernya terbuka! Silahkan cek",
-      "kode sumbernya"
-    ]
-  },
-  "features": {
-    "title": ["Temukan", "Banyaknya", "Keberagaman", "di Nusa Tenggara Barat"],
-    "description": "Website ini akan memberikan kamu banyak konten informatif yang akan membantu kamu untuk menjelajahi lebih dalam mengenai Nusa Tenggara Barat",
-    "featuresList": [
-      {
-        "iconAlt": "Ilustrasi Informatif",
-        "title": "Sederhana dan Informatif",
-        "description": "Website yang sederhana dan informatif untuk menemukan banyaknya keberagaman yang unik di Nusa Tenggara Barat"
-      },
-      {
-        "iconAlt": "Ilustrasi Edukatif",
-        "title": "Edukatif",
-        "description": "Misi kami adalah untuk mengenalkan orang-orang mengenai Nusa Tenggara Barat"
-      },
-      {
-        "iconAlt": "Ilustrasi Centang",
-        "title": "Mudah untuk Dipahami",
-        "description": "Mempelajari hal baru tidak harus bersusah payah. Dengan konten kami yang mudah dipahami, dengan mudah kamu akan dapat mempelajari hal-hal baru mengenai Nusa Tenggara Barat"
-      }
-    ]
-  },
-  "cultures": {
-    "title": ["Pelajari Mengenai", "Keberagamannya"],
-    "description": "Lihatlah segala macam keberagaman yang unik dan menakjubkan di Nusa Tenggara Barat",
-    "cta": "Lihat Keberagamannya",
-    "illustrationAlt": "Ilustrasi Keberagaman"
-  },
-  "geography": {
-    "title": ["Jelajahi", "Geografinya"],
-    "description": [
-      "Dengan luas total 20.153 km",
-      ", kamu dapat menemukan banyak sekali tempat dan kekayaan alam yang luas biasa"
-    ],
-    "cta": "Jelajahi Lebih Dalam",
-    "illustrationAlt": "Ilustrasi Gunung"
-  },
-  "biotechnology": {
-    "title": ["Perkembangan", "Bioteknologi"],
-    "description": "Pelajari mengenai perkembangan produk bioteknologi di Nusa Tenggara Barat",
-    "cta": "Pelajari Lebih Lanjut",
-    "illustrationAlt": "Ilustrasi Sains"
+    "title": "Ayo Jelajahi Nusa Tenggara Barat",
+    "cta": "Ayo Mulai!"
   }
 }

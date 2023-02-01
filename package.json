@@ -34,6 +34,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource/fredoka-one": "^4.5.9",
+    "@fontsource/montserrat": "^4.5.14",
     "flag-icons": "^6.6.6",
     "sveltekit-i18n": "^2.2.2"
   }

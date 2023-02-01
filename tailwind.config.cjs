@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'open-sans': ['Open Sans']
+        montserrat: ['Montserrat'],
+        'fredoka-one': ['Fredoka One']
       }
     }
   },

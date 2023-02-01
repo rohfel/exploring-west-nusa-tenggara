@@ -11,35 +11,13 @@ const config: Config = {
   loaders: [
     {
       locale: 'en',
-      key: 'nav',
-      loader: async () => (await import('./translations/en/nav.json')).default
-    },
-    {
-      locale: 'en',
       key: 'home',
       loader: async () => (await import('./translations/en/home.json')).default
-    },
-    {
-      locale: 'en',
-      key: 'explore',
-      loader: async () =>
-        (await import('./translations/en/explore.json')).default
-    },
-    {
-      locale: 'id',
-      key: 'nav',
-      loader: async () => (await import('./translations/id/nav.json')).default
     },
     {
       locale: 'id',
       key: 'home',
       loader: async () => (await import('./translations/id/home.json')).default
-    },
-    {
-      locale: 'id',
-      key: 'explore',
-      loader: async () =>
-        (await import('./translations/id/explore.json')).default
     }
   ]
 };
