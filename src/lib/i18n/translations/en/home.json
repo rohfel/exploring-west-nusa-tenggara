@@ -3,7 +3,36 @@
     "title": "Exploring West Nusa Tenggara"
   },
   "hero": {
-    "title": "Let's Exploring West Nusa Tenggara",
+    "title": "Let's Explore West Nusa Tenggara",
     "cta": "Let's Start!"
+  },
+  "introduction": {
+    "title": "A Little Description About West Nusa Tenggara",
+    "description": "West Nusa Tenggara is a province located in the middle of the Lesser Sunda Islands in Indonesia. Its capital city is located in Mataram. It has 8 regencies and 2 cities including Mataram. In 2020, West Nusa Tenggara has a total population of 5.320.092 people."
+  },
+  "cultures": {
+    "title": "Some Cultures in West Nusa Tenggara",
+    "description": "West Nusa Tenggara has a lot of amazing cultures. Here are some of them.",
+    "peresean": {
+      "title": "Peresean",
+      "description": "Peresean is a tradition in Lombok where 2 men fight with each other with rattan stick and a buffalo skin shield. Peresean usually played on independence day of Indonesia."
+    }
+  },
+  "natures": {
+    "title": "Several Natural Resources in West Nusa Tenggara",
+    "description": "West Nusa Tenggara has plentiful of natural resources, especially cassavas in Lombok. In 2020, Lombok produced over 691.03 quintal per hectare or 69.103 ton per hectare of cassavas."
+  },
+  "problems": {
+    "introduction": "But...",
+    "title": "Has a lot of Cassavas but Did Not Get Utilized Properly",
+    "description": [
+      "From the data at ntbprov.go.id, we found that in 2020, the productivity of cassavas in some of the regencies or cities in West Nusa Tenggara is lower than the harvest area. For example, the harvest area of cassavas in East Lombok is 741.9 hectare but the productivity is only 201.56 quintal per hectare or 20.156 ton per hectare. It is only 27% of the total harvest area!",
+      "Apart from that, the price of sticky rice is high. In 2021, the price of white sticky rice has gone up from Rp. 13.000 - Rp. 30.000 per kg to Rp. 17.000 - Rp. 60.000 per kg. Also the price of black sticky rice also has gone up from Rp. 19.000 - Rp. 35.000 per kg to Rp. 17.000 - Rp. 80.000 per kg."
+    ]
+  },
+  "solutions": {
+    "title": "We Have a Solution!",
+    "description": "The solution is to inovate the traditional dish of Poteng Jaje Tujak of which the ingredients are based on sticky rice to be based on cassavas. Because as we explain earlier, West Nusa Tenggara especially Lombok has a lot of cassavas that does not get utilized properly.",
+    "learnMore": "Learn More"
   }
 }
