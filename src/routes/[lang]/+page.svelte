@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import ScrollMagic from 'scrollmagic';
+
   import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
   import { TweenMax, TimelineMax } from 'gsap';
 
@@ -14,9 +14,12 @@
     Solutions
   } from '$lib/components';
 
+  let ScrollMagic;
   let slidesContainer;
 
-  onMount(() => {
+  onMount(async () => {
+    ScrollMagic = await import('scrollmagic');
+
     ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
     const controller = new ScrollMagic.Controller({
