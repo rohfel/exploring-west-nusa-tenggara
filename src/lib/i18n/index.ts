@@ -18,6 +18,13 @@ const config: Config = {
       locale: 'id',
       key: 'home',
       loader: async () => (await import('./translations/id/home.json')).default
+    },
+    {
+      locale: 'id',
+      key: 'diversities.poteng-jaje-tujak',
+      loader: async () =>
+        (await import('./translations/id/diversities/poteng-jaje-tujak.json'))
+          .default
     }
   ]
 };

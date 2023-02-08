@@ -3,15 +3,14 @@
     "title": "Exploring West Nusa Tenggara"
   },
   "hero": {
-    "title": "Let's Explore West Nusa Tenggara",
-    "cta": "Let's Start!"
+    "title": "Let's Explore West Nusa Tenggara"
   },
   "introduction": {
-    "title": "A Little Description About West Nusa Tenggara",
+    "title": "About West Nusa Tenggara",
     "description": "West Nusa Tenggara is a province located in the middle of the Lesser Sunda Islands in Indonesia. Its capital city is located in Mataram. It has 8 regencies and 2 cities including Mataram. In 2020, West Nusa Tenggara has a total population of 5.320.092 people."
   },
   "cultures": {
-    "title": "Some Cultures in West Nusa Tenggara",
+    "title": "Cultures in West Nusa Tenggara",
     "description": "West Nusa Tenggara has a lot of amazing cultures. Here are some of them.",
     "peresean": {
       "title": "Peresean",
@@ -19,7 +18,7 @@
     }
   },
   "natures": {
-    "title": "Several Natural Resources in West Nusa Tenggara",
+    "title": "Natural Resources in West Nusa Tenggara",
     "description": "West Nusa Tenggara has plentiful of natural resources, especially cassavas in Lombok. In 2020, Lombok produced over 691.03 quintal per hectare or 69.103 ton per hectare of cassavas."
   },
   "problems": {

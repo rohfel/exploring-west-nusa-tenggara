@@ -3,16 +3,6 @@
 </script>
 
 <section id="problems">
-  <div class="w-screen h-screen bg-black">
-    <div class="h-screen grid place-items-center">
-      <h2
-        class="font-fredoka-one font-semibold text-3xl text-center text-white"
-      >
-        {$t('home.problems.introduction')}
-      </h2>
-    </div>
-  </div>
-
   <div
     class="w-screen h-screen bg-[url('/photos/home/cassava.jpg')] bg-cover bg-center"
   >

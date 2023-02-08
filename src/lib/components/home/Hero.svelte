@@ -16,17 +16,6 @@
           >
             {$t('home.hero.title')}
           </h1>
-
-          <button
-            class="m-5 flex px-6 py-2 rounded-full bg-gradient-to-tr from-cyan-600 to-sky-700"
-          >
-            <a
-              href="#introduction"
-              class="font-montserrat font-semibold text-white"
-            >
-              {$t('home.hero.cta')}
-            </a>
-          </button>
         </div>
       </div>
 

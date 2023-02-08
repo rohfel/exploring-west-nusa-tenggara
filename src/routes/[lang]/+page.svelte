@@ -21,23 +21,6 @@
     ScrollMagic = await import('scrollmagic');
 
     ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
-
-    const controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: 'onLeave',
-        duration: '100%'
-      }
-    });
-
-    const slides = slidesContainer.querySelectorAll('section');
-
-    for (let i = 0; i < slides.length; i++) {
-      new ScrollMagic.Scene({
-        triggerElement: slides[i]
-      })
-        .setPin(slides[i], { pushFollowers: false })
-        .addTo(controller);
-    }
   });
 </script>
 

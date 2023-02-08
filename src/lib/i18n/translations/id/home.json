@@ -3,15 +3,14 @@
     "title": "Menjelajahi Nusa Tenggara Barat"
   },
   "hero": {
-    "title": "Ayo Jelajahi Nusa Tenggara Barat",
-    "cta": "Ayo Mulai!"
+    "title": "Ayo Jelajahi Nusa Tenggara Barat"
   },
   "introduction": {
-    "title": "Sedikit Deskripsi Mengenai Nusa Tenggara Barat",
+    "title": "Mengenai Nusa Tenggara Barat",
     "description": "Nusa Tenggara Barat merupakan provinsi yang terletak di bagian tengah kepulauan Nusa Tenggara. Ibu kotanya terletak di Mataram. Provinsi ini mempunyai 8 kabupaten dan 2 kota termasuk Mataram. Di tahun 2020, jumlah penduduk di Nusa Tenggara mencapai 5.320.092 jiwa."
   },
   "cultures": {
-    "title": "Beberapa Kebudayaan di Nusa Tenggara Barat",
+    "title": "Kebudayaan di Nusa Tenggara Barat",
     "description": "Nusa Tenggara Barat mempunyai beragam kebudayaan yang menakjubkan. Ini adalah beberapa di antaranya.",
     "peresean": {
       "title": "Peresean",
@@ -19,7 +18,7 @@
     }
   },
   "natures": {
-    "title": "Beberapa Potensi Alam di Nusa Tenggara Barat",
+    "title": "Potensi Alam di Nusa Tenggara Barat",
     "description": "Nusa Tenggara Barat mempunyai banyak potensi sumber daya alam, terlebih singkong di Lombok. Di tahun 2020, Lombok memproduksi 691.03 kwintal per hektar atau 69.103 ton per hektar singkong."
   },
   "problems": {

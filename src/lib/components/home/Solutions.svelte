@@ -25,7 +25,7 @@
             class="m-5 flex px-6 py-2 rounded-full bg-gradient-to-tr from-cyan-600 to-sky-700"
           >
             <a
-              href={`/${$locale}/poteng-jaje-tujak`}
+              href={`/${$locale}/diversities/poteng-jaje-tujak`}
               class="font-montserrat font-semibold text-white"
             >
               {$t('home.solutions.learnMore')}

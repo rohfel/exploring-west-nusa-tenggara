@@ -33,7 +33,7 @@
                 class="h-44"
               />
 
-              <h3 class="font-fredoka-one font-medium text-xl text-white">
+              <h3 class="p-2 font-fredoka-one font-medium text-xl text-white">
                 <a href={`/${$locale}/cultures/peresean`}
                   >{$t('home.cultures.peresean.title')}</a
                 >
